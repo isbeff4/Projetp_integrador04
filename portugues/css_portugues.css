@@ -1,0 +1,342 @@
+/* Reset b�sico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #273746;
+}
+
+body {
+  background-color: #f9fafb;
+  line-height: 1.6;
+  padding: 15px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #1b4965;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #527a9a;
+}
+
+h2 {
+  color: #1b4965;
+  margin-bottom: 15px;
+  margin-top: 40px;
+  border-bottom: 3px solid #2978b5;
+  padding-bottom: 6px;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+.autores {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px 40px;
+  margin-top: 15px;
+}
+
+/* �rea de cada autor */
+.autor {
+  background-color: #e8f0fe;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 8px #b0c9f9;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 100%; /* deixar o autor ocupar toda a coluna */
+  margin-bottom: 0
+}
+.autores > div:last-child {
+  grid-column: 1 / -1; /* Faz o elemento ocupar da primeira at� a �ltima coluna */
+  justify-self: center; /* Centraliza horizontalmente */
+}
+
+.autor img {
+  width: 110px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #2978b5;
+  flex-shrink: 0;
+}
+
+.autor-texto {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.autor h3 {
+  color: #1b4965;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.autor button {
+  background-color: #2978b5;
+  color: white;
+  padding: 7px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+  margin-bottom: 12px;
+  width: fit-content;
+}
+
+.autor button:hover {
+  background-color: #1b4965;
+}
+
+.info-autor {
+  display: none;
+  font-size: 1rem;
+  color: #34495e;
+  max-width: 100%;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+/* Infogr�fico */
+.infografico {
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgb(41 120 181 / 0.3);
+}
+
+/* Conclus�o */
+section p:last-child {
+  margin-bottom: 20px;
+}
+
+/* Rodap� */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 15px 10px;
+  border-top: 1px solid #d3d9e0;
+  color: #527a9a;
+  font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media screen and (max-width: 720px) {
+  body {
+      padding: 10px 15px;
+      max-width: 100%;
+  }
+  .autor {
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+      padding: 15px;
+  }
+  .autor img {
+      margin-bottom: 15px;
+  }
+  .autor-texto {
+      width: 100%;
+      text-align: center;
+  }
+  .autor button {
+      align-self: center;
+      margin-bottom: 15px;
+  }
+}
+html {
+  scroll-behavior: smooth; /* Scroll suave */
+}
+
+#menu-secoes {
+  background-color: #1b4965;
+  width: 1000px;
+  position: sticky; /* fixa ao rolar */
+  display: flex;
+  flex-wrap: nowrap;       /* Evita quebra de linha */
+  gap: 15px;               /* Espa�amento entre os itens */
+  padding: 0;
+  margin: 0;
+  list-style: none;        /* Remove marcadores */
+  overflow-x: auto;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
+}
+
+#menu-secoes ul {
+  white-space: nowrap;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  margin: 0;
+  gap: 15px;
+  flex-wrap: nowrap;
+}
+
+#menu-secoes ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 550;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+#menu-secoes ul li a:hover,
+#menu-secoes ul li a:focus {
+  background-color: #2978b5;
+  outline: none;
+}
+
+/* Para mobile, deixar o menu em coluna (opcional) */
+@media screen and (max-width: 720px) {
+  #menu-secoes ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.questao {
+  background-color: #eef4fb;
+  padding: 18px 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px #b0c9f9;
+}
+
+.questao h3 {
+  color: #1b4965;
+  margin-bottom: 10px;
+}
+
+details {
+  margin-top: 12px;
+}
+
+summary {
+  cursor: pointer;
+  background-color: #2978b5;  /* azul forte */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  font-weight: 600;
+  user-select: none; /* impede sele��o do texto ao clicar */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  width: fit-content;
+}
+
+summary:hover,
+summary:focus {
+  background-color: #1b3960; /* azul mais escuro ao passar o mouse */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  outline: none;
+}
+
+
+
+/* Ajustes para listas nas quest�es */
+.questao ul {
+  margin-left: 20px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+.questao ul li {
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+/* Estilo da se��o de podcast */
+#podcast {
+  background-color: #f3f3f3;
+  padding: 30px 20px;
+  margin: 40px auto;
+  border-radius: 16px;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Estiliza��o do elemento <audio> */
+#podcast audio {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+#btnTopo {
+  display: none; /* Escondido por padr�o */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #1b3960;
+  color: white;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+#btnTopo:hover {
+  background-color: #2978b5;
+}
+
+.btn-voltar {
+  display: inline-block;
+  background-color: #014267;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.btn-voltar:hover {
+  background-color: #02304b;
+  transform: translateY(-1px);
+}
+

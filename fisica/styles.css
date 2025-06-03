@@ -1,0 +1,458 @@
+/* Estilos Gerais */
+:root {
+    --primary: #2b3b68;
+    --secondary: #44b3b9;
+    --accent: #e74c3c;
+    --light: #ecf0f1;
+    --dark: #1a252f;
+    --text: #333;
+    --text-light: #969696;
+    --border: #ddd;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navegação */
+nav {
+    background-color: var(--primary);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    display: block;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    color: var(--secondary);
+    transform: translateY(-2px);
+}
+
+nav .icon {
+    margin-right: 8px;
+}
+
+/* Cabeçalho */
+header {
+    position: relative;
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    margin-bottom: 40px;
+    background: url('https://nexo-uploads-beta.s3.amazonaws.com/wp-content/uploads/images/2023/12/21113520/teaser_binary_217025-1138x344.jpg') center/cover no-repeat;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(135deg, rgba(72, 85, 121, 0.6), rgba(26, 37, 47, 0.6));
+    z-index: 1;
+}
+
+header h1,
+header p {
+    position: relative;
+    z-index: 2;
+}
+
+/* Seções */
+section {
+    margin-bottom: 60px;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: var(--primary);
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary);
+}
+
+section h2 i {
+    margin-right: 10px;
+    color: var(--accent);
+}
+
+/* Estilos específicos do Relatório */
+.report-container {
+    margin-top: 30px;
+}
+
+.technical-report {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+}
+
+.technical-report h1 {
+    text-align: center;
+    color: #ecf0f1;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary);
+}
+
+.report-meta {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.report-meta span {
+    margin: 0 15px;
+}
+
+.technical-report h2 {
+    color: var(--primary);
+    margin-top: 40px;
+    padding-left: 10px;
+    border-left: 4px solid var(--secondary);
+}
+
+.technical-report h3 {
+    color: var(--dark);
+    margin-top: 30px;
+}
+
+.figure {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.caption {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-top: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9rem;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+th {
+    background-color: var(--light);
+    color: var(--primary);
+}
+
+.report-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* Estilos do Vídeo */
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.video-wrapper {
+    flex: 1;
+    min-width: 300px;
+}
+
+.video-placeholder {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.video-placeholder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-placeholder i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: white;
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.video-placeholder:hover i {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video-description {
+    flex: 1;
+    min-width: 300px;
+}
+
+.video-description h3 {
+    color: var(--primary);
+    margin-top: 0;
+}
+
+/* Estilos do Podcast */
+.podcast-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.podcast-cover {
+    flex: 0 0 250px;
+}
+
+.podcast-cover img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.podcast-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.podcast-info h3 {
+    color: var(--primary);
+    margin-top: 0;
+}
+
+.episode {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.episode h4 {
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--secondary);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 15px;
+   
+}
+
+.btn:hover {
+    background-color: var(--primary);
+   
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 5px 0;
+    color: var(--light);
+}
+
+.explanation-cards {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between; /* Distribui os cards igualmente no container */
+    flex-wrap: wrap; /* Permite que os cards se movam para a linha seguinte em telas pequenas */
+    gap: 20px; /* Espaço entre os cards */
+}
+
+.card {
+    background-color: var(--light); /* Cor clara definida no root */
+    border: 1px solid var(--border);
+    padding: 5px;
+    border-radius: 10px;
+    width: 30%; /* Ajuste para garantir que os cards fiquem lado a lado */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Coloca título e texto em uma coluna */
+    justify-content: flex-start; /* Garante que o conteúdo comece no topo */
+    height: auto; /* Ajuste a altura para que o conteúdo se ajuste */
+}
+/* Animação de entrada para a navegação */
+nav a {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--secondary);
+    transform: translateY(-2px);
+    opacity: 1;
+}
+
+/* Animação de fade-in nos títulos */
+section h2, .technical-report h1 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.card h4 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--primary); /* Cor primária para os títulos */
+    text-align: center;
+}
+
+/* Sombras suaves e transições em elementos */
+* {
+    transition: all 0.3s ease;
+}
+
+.card, .btn, .video-wrapper, .podcast-cover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover, .btn:hover, .video-wrapper:hover, .podcast-cover:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+    font-size: 0.95em;
+    color: var(--text-light); /* Cor de texto mais suave */
+    flex-grow: 1; /* Para distribuir o conteúdo e usar o espaço disponível */
+    text-align: justify;
+}
+
+/* Cursor padrão personalizado (todo o site) */
+* {
+  cursor: url('cursor.png'), auto !important;
+}
+
+/* Cursor tipo "mãozinha" personalizado */
+
+
+
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .explanation-cards {
+        justify-content: center; /* Alinha os cards ao centro em telas pequenas */
+    }
+
+    .card {
+        width: 100%; /* Para os cards ocuparem 100% da largura da tela em dispositivos móveis */
+    }
+
+}
+.btn-voltar {
+    position: fixed; /* Só esse */
+    top: 20px;
+    left: 20px;
+    z-index: 9999; /* Garante que fique acima de tudo */
+    display: inline-block;
+    background-color: #1d3181;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.btn-voltar:hover {
+    background-color: #10236e;
+    transform: translateY(-1px);
+}

@@ -1,0 +1,1173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Variáveis de cores para temas claro e escuro */
+:root {
+  --color-bg-light: #f9f9f9;
+  --color-bg-dark: #121212;
+  --color-text-light: #222;
+  --color-text-dark: #eee;
+  --color-primary: #1e90ff;
+  --color-primary-hover: #0f62fe;
+  --color-secondary: #555;
+  --color-card-bg: #fff;
+  --color-card-bg-dark: #1e1e1e;
+  --color-border: #ddd;
+  --color-border-dark: #333;
+  --color-btn-bg: var(--color-primary);
+  --color-btn-hover: var(--color-primary-hover);
+  --color-btn-text: #fff;
+}
+
+/* Tema escuro ativado no body */
+body.dark-theme {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+}
+
+/* Tema claro padrão */
+body {
+  background-color: var(--color-bg-light);
+  color: var(--color-text-light);
+  line-height: 1.6;
+  padding-bottom: 40px;
+}
+
+/* Header / Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-primary);
+  padding: 10px 20px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  height: 50px; /* Ajustado para ficar menor */
+  width: auto;
+}
+
+/* Navegação */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-list li a:hover {
+  color: #ffdd57;
+  align-items: center;
+  text-align: center;
+}
+
+.theme-toggle {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 5px;
+  transition: color 0.3s;
+}
+
+.theme-toggle:hover {
+  color: #ffdd57;
+}
+
+/* Introdução */
+.intro {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  color: var(--color-primary);
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: inherit;
+}
+
+/* Imagem tematica */
+.imagem-tematica {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  padding: 0 20px;
+}
+
+.imagem-tematica img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* Estratégias (Skimming e Scanning) */
+.estrategia {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.estrategia h2 {
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Card container: cards lado a lado */
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1 1 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: background-color 0.3s, border-color 0.3s;
+  color: var(--color-text-light);
+}
+
+body.dark-theme .card {
+  background-color: var(--color-card-bg-dark);
+  border-color: var(--color-border-dark);
+  color: var(--color-text-dark);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+/* Botões dos cards */
+.card button {
+  background-color: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  border: none;
+  border-radius: 5px;
+  padding: 8px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+}
+
+.card button:hover {
+  background-color: var(--color-btn-hover);
+}
+
+/* Texto oculto */
+.hidden {
+  display: none;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Mostrar texto */
+.card p:not(.hidden),
+.aplicacoes-video p {
+  margin-top: 10px;
+  color: inherit;
+}
+
+/* Dicas e erros comuns lado a lado */
+.dicas-erros > div {
+  display: flex;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+  justify-content: center;
+  color: var(--color-text-light);
+}
+
+body.dark-theme .dicas-erros > div {
+  color: var(--color-text-dark);
+}
+
+.dicas-erros div > div {
+  flex: 1;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+body.dark-theme .dicas-erros div > div {
+  background-color: var(--color-card-bg-dark);
+  border-color: var(--color-border-dark);
+}
+
+.dicas-erros h3 {
+  margin-bottom: 10px;
+  color: var(--color-primary);
+}
+
+.dicas-erros ul {
+  list-style: disc inside;
+  line-height: 1.4;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+/* Aplicações de vídeo */
+.aplicacoes-video {
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+  color: inherit;
+}
+
+.aplicacoes-video h3 {
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.video-upload video {
+  width: 100%;
+  max-width: 640px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Imagem-exemplo Scanning */
+.imagem-exemplo {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.imagem-exemplo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* Tabela estilizada */
+.tabela-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.tabela-container h2 {
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.tabela-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1rem;
+  color: var(--color-text-light);
+}
+
+body.dark-theme table {
+  color: var(--color-text-dark);
+}
+
+table thead {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+table th,
+table td {
+  border: 1px solid var(--color-border);
+  padding: 12px 15px;
+  text-align: left;
+}
+
+body.dark-theme table th,
+body.dark-theme table td {
+  border-color: var(--color-border-dark);
+}
+
+/* Responsividade */
+@media (max-width: 950px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .dicas-erros > div {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-list {
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+/* Extras para links, listas e textos */
+a {
+  color: var(--color
+-primary);
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+/* Atividades (checkbox e labels) */
+.atividades {
+max-width: 900px;
+margin: 30px auto 60px auto;
+padding: 0 20px;
+}
+
+.atividades h2 {
+color: var(--color-primary);
+margin-bottom: 15px;
+}
+
+.atividades label {
+display: block;
+margin-bottom: 12px;
+cursor: pointer;
+font-size: 1.1rem;
+color: inherit;
+}
+
+.atividades input[type="checkbox"] {
+margin-right: 10px;
+transform: scale(1.2);
+cursor: pointer;
+}
+
+/* Podcast e mapa mental */
+.podcast, .mapa-mental {
+max-width: 900px;
+margin: 40px auto;
+padding: 0 20px;
+color: inherit;
+}
+
+.podcast h2, .mapa-mental h2 {
+color: var(--color-primary);
+margin-bottom: 20px;
+}
+
+/* Área de links e conteúdo oculto no podcast e mapa mental */
+.podcast .content, .mapa-mental .content {
+display: none;
+margin-top: 15px;
+font-size: 1rem;
+line-height: 1.4;
+}
+
+.podcast .content.active, .mapa-mental .content.active {
+display: block;
+}
+
+/* Botões para mostrar/esconder podcast e mapa mental */
+.btn-toggle {
+background-color: var(--color-btn-bg);
+color: var(--color-btn-text);
+border: none;
+border-radius: 5px;
+padding: 8px 16px;
+cursor: pointer;
+font-weight: 600;
+margin-bottom: 15px;
+transition: background-color 0.3s;
+}
+
+.btn-toggle:hover {
+background-color: var(--color-btn-hover);
+}
+
+/* Footer simples */
+footer {
+text-align: center;
+padding: 15px 10px;
+background-color: var(--color-primary);
+color: white;
+position: relative;
+bottom: 0;
+width: 100%;
+font-size: 0.9rem;
+}
+
+/*parte já corrigida*/
+
+.hidden {
+  display: none;
+}
+.podcast {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  color: inherit;
+}
+
+.podcast h2 {
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: left;
+}
+
+/* Container flex só para imagem + texto */
+.podcast-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Imagem maior */
+.podcast-content img {
+  width: 350px;   /* imagem maior */
+  height: 350px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.podcast-content img:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+
+/* Texto com largura limitada para não ultrapassar a imagem */
+.podcast-content p {
+  max-width: 450px;  /* limita largura do texto */
+  font-size: 1.25rem;
+  line-height: 1.85;
+  color: inherit;
+  text-align: justify;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  padding-right: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .podcast-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .podcast-content img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+
+  .podcast-content p {
+    max-width: 100%;
+    padding-right: 0;
+    text-align: left;
+  }
+}
+/* Seção do Quiz */
+#quiz {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--color-card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(30, 144, 255, 0.2);
+  color: var(--color-text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme #quiz {
+  background-color: var(--color-card-bg-dark);
+  color: var(--color-text-dark);
+}
+
+/* Título principal */
+#quiz > h1 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(30, 144, 255, 0.5);
+}
+
+/* Instruções */
+#quiz > p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: var(--color-secondary);
+  text-align: center;
+}
+
+/* Texto dos exercícios */
+#quiz .texto {
+  background-color: var(--color-bg-light);
+  border-left: 6px solid var(--color-primary);
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.5;
+  box-shadow: 0 2px 6px rgba(30, 144, 255, 0.1);
+  color: var(--color-text-light);
+}
+
+body.dark-theme #quiz .texto {
+  background-color: #2a2a2a;
+  color: var(--color-text-dark);
+  box-shadow: 0 2px 6px rgba(30, 144, 255, 0.3);
+}
+
+/* Perguntas */
+#quiz .pergunta {
+  margin-bottom: 25px;
+  padding-left: 10px;
+  border-left: 4px solid var(--color-primary);
+}
+
+#quiz .pergunta p {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+/* Labels das alternativas */
+#quiz .pergunta label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--color-secondary);
+  transition: color 0.3s;
+}
+
+#quiz .pergunta label:hover {
+  color: var(--color-primary);
+}
+
+/* Inputs radio customizados */
+#quiz input[type="radio"] {
+  margin-right: 8px;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+/* Botão enviar */
+#quiz button {
+  display: block;
+  margin: 30px auto 0 auto;
+  background-color: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  border: none;
+  border-radius: 30px;
+  padding: 12px 36px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(30, 144, 255, 0.4);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#quiz button:hover {
+  background-color: var(--color-btn-hover);
+  box-shadow: 0 6px 20px rgba(15, 98, 254, 0.6);
+}
+
+/* Resultados e explicações */
+#resultado,
+#explicacoes {
+  max-width: 900px;
+  margin: 30px auto 0 auto;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  border-radius: 8px;
+  background-color: var(--color-card-bg);
+  box-shadow: 0 2px 10px rgba(30, 144, 255, 0.15);
+  color: var(--color-text-light);
+}
+
+body.dark-theme #resultado,
+body.dark-theme #explicacoes {
+  background-color: var(--color-card-bg-dark);
+  color: var(--color-text-dark);
+  box-shadow: 0 2px 10px rgba(30, 144, 255, 0.3);
+}
+
+#topo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 48px;          /* define largura fixa */
+  height: 48px;         /* define altura fixa */
+  font-size: 1.8rem;    /* aumenta um pouco a fonte */
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(30, 144, 255, 0.5);
+  transition: background-color 0.3s, transform 0.2s ease;
+  z-index: 100;
+
+  display: flex;            /* para centralizar a seta */
+  align-items: center;
+  justify-content: center;
+  padding: 0;               /* remove padding para não atrapalhar */
+}
+
+#topo:hover {
+  background-color: var(--color-primary-hover);
+  transform: scale(1.1);
+}
+
+
+/* Responsividade */
+@media (max-width: 600px) {
+  #quiz {
+    padding: 15px 15px 30px 15px;
+  }
+
+  #quiz > h1 {
+    font-size: 1.6rem;
+  }
+
+  #quiz button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+  }
+}
+.conclusao {
+  max-width: 900px;
+  margin: 40px auto 60px auto;
+  padding: 25px 30px;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(30, 144, 255, 0.15);
+  color: var(--color-text-light);
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+body.dark-theme .conclusao {
+  background-color: var(--color-card-bg-dark);
+  color: var(--color-text-dark);
+  border-color: var(--color-border-dark);
+  box-shadow: 0 4px 15px rgba(30, 144, 255, 0.3);
+}
+
+.conclusao h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  user-select: none;
+}
+
+.conclusao p {
+  white-space: pre-line; /* Mantém quebras de linha do HTML */
+}
+
+.conclusao strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .conclusao {
+    padding: 20px 15px;
+    font-size: 1rem;
+  }
+
+  .conclusao h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+}
+.card-mapa {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--color-card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(30, 144, 255, 0.15);
+  text-align: center;
+  color: var(--color-text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme .card-mapa {
+  background-color: var(--color-card-bg-dark);
+  color: var(--color-text-dark);
+}
+
+/* Botão estilizado */
+.btn-mapa {
+  background-color: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  border: none;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.btn-mapa:hover {
+  background-color: var(--color-btn-hover);
+}
+
+/* Container do mapa - escondido inicialmente */
+.mapa-container {
+  display: none; /* começa oculto */
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Quando mostrar, display flex para alinhar centralizado */
+.mapa-container.mostrar {
+  display: flex;
+}
+
+/* Imagem com bordas arredondadas e sombra */
+.mapa-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Link de download estilizado como botão */
+.btn-download {
+  background-color: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+  background-color: var(--color-primary-hover);
+}
+/* Container da introdução, texto alinhado à esquerda, com margem lateral e linha confortável */
+.intro {
+  max-width: 750px;
+  margin: 50px auto 40px;
+  padding: 0 20px;
+  text-align: left;
+  font-family: 'Georgia', serif;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--color-text-light);
+}
+
+.intro h1 {
+  font-size: 2.3rem;           /* Tamanho que geralmente cabe bem em 750px */
+  margin-bottom: 25px;
+  color: var(--color-primary);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.1;
+  white-space: nowrap;         /* Mantém em uma linha */
+  overflow: visible;           /* NADA de corte */
+  text-overflow: unset;      /* Remove os "..." automáticos */
+}
+
+
+/* Parágrafos com espaçamento mais confortável */
+.intro p {
+  margin-bottom: 1.3em;
+  font-weight: 400;
+  color: var(--color-text-light);
+}
+
+/* Ajuste para o modo dark */
+body.dark-theme .intro {
+  color: var(--color-text-dark);
+}
+
+/* Imagem temática maior, ainda com elegância */
+.imagem-tematica {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0 50px;
+  padding: 0 20px;
+}
+
+.imagem-tematica img {
+  max-width: 800px;    /* imagem maior agora */
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease;
+}
+
+.imagem-tematica img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+  .intro {
+    max-width: 90%;
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  .intro h1 {
+    font-size: 1.6rem;
+    white-space: normal;        /* em telas pequenas, deixa quebrar */
+    overflow: visible;
+    text-overflow: unset;
+  }
+
+  .imagem-tematica img {
+    max-width: 100%;
+  }
+}
+/* Adicione no topo do seu CSS, antes dos outros containers */
+.container {
+  max-width: 1400px; /* maior largura para aproveitar telas maiores */
+  margin: 0 auto;
+  padding: 0 20px; /* manter espaçamento lateral */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Remover max-width e margin auto duplicados dos containers internos */
+.intro,
+.estrategia,
+.dicas-erros > div,
+.aplicacoes-video,
+.imagem-exemplo,
+.tabela-container,
+.atividades,
+.podcast,
+.mapa-mental,
+#quiz,
+#resultado,
+#explicacoes {
+  max-width: none; /* ou remova essa linha se preferir */
+  margin: 0; /* ou deixe só margin-bottom, sem centralizar */
+  padding: 20px 0; /* vertical, se quiser espaçamento */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Opcional: no .dicas-erros > div, tirar max-width e margin auto */
+.dicas-erros > div {
+  max-width: none;
+  margin: 0;
+  justify-content: space-between; /* para distribuir melhor o espaço */
+}
+
+/* Para as sections com header centralizado, pode deixar o texto alinhado à esquerda */
+.tabela-container,
+.podcast {
+  text-align: left;
+}
+
+/* Ajuste o intro para não ser 100% largura, só um pouco menor que o container */
+.intro {
+  max-width: 700px; /* um pouco mais estreito para leitura */
+  margin-bottom: 40px;
+}
+
+/* Se precisar ajustar o card container para ocupar mais espaço */
+.card-container {
+  max-width: none;
+  width: 100%;
+  justify-content: flex-start; /* cards começam da esquerda */
+}
+
+/* Ajuste geral para não ficar tudo colado */
+body {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* Ou ajuste no container para ter padding lateral maior */
+.container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* Para garantir responsividade */
+@media (max-width: 1400px) {
+  .container {
+    max-width: 95%;
+    padding: 0 20px;
+  }
+}
+/* Reset básico para garantir que não haja margens/paddings que criem espaços */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Container que envolve todo o conteúdo para controlar layout flex */
+.wrapper {
+  min-height: 100vh; /* ocupar toda a altura da viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Conteúdo principal que cresce para ocupar o espaço */
+.content {
+  flex: 1;
+}
+
+/* Header e Footer com largura total e sem margens laterais */
+header, footer {
+  width: 100%;
+  margin: 0;
+  padding: 20px 20px; /* você pode ajustar o padding lateral aqui */
+  background-color: #333; /* cor de exemplo, mude para a sua */
+  color: white; /* cor do texto no header/footer */
+}
+
+/* Para centralizar o conteúdo interno com limite máximo de largura */
+header .container, footer .container {
+  max-width: 1200px; /* ajuste conforme a largura desejada */
+  margin: 0 auto; /* centraliza horizontalmente */
+  padding: 0 20px; /* espaçamento interno */
+}
+
+/* Exemplo para o conteúdo do main */
+main.content {
+  padding: 20px;
+}
+.intro{ 
+  max-width: 800px; /* controla a largura máxima do texto */
+  margin: 0 auto;   /* centraliza horizontalmente */
+  padding: 20px;    /* dá um espaçamento interno */
+  line-height: 1.6; /* deixa o texto mais legível */
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.intro h1 { 
+  color: #2a90f0;     /* azul parecido com o da sua imagem */
+  margin-bottom: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.intro p { 
+  text-align: justify; /* justifica o texto para ficar organizado */
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+.aplicacoes-video {
+  text-align: center;
+  padding: 20px;
+}
+
+.aplicacoes-video p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.video-upload video {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto;
+}
+.podcast-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 40px auto;
+  max-width: 1100px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.podcast-img {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.podcast-img:hover {
+  transform: scale(1.05);
+}
+
+.podcast-text {
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+  text-justify: inter-word;
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar geral */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 40px;
+  background-color: #0077cc; /* azul */
+  width: 100%;
+  height: 70px;
+  position: relative;
+}
+
+/* Logo no canto esquerdo */
+.logo {
+  height: 50px;
+  width: auto;
+  margin-right: 20px;
+}
+
+/* Menu centralizado horizontalmente */
+.navbar-menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Lista de navegação */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+/* Links */
+.nav-list li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #ffcc00;
+}
+
+/* Responsivo (opcional) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .navbar-menu {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+.btn-voltar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+  background-color: #284d91;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.btn-voltar:hover {
+  background-color: #282a91;
+  transform: translateY(-1px);
+}

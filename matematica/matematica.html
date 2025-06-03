@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Estatística, Probabilidade e Finanças</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="../index.html" class="btn-voltar">Voltar</a>
+  <header>
+    <h1>Matemática</h1>
+    <h2>Estatística, Probabilidade e Finanças</h2>
+    <nav>
+      <ul>
+        <li><a href="#secao1">Conceitos Fundamentais</a></li>
+        <li><a href="#secao2">Análise de Dados</a></li>
+        <li><a href="#secao3">Probabilidade no Dia a Dia</a></li>
+        <li><a href="#secao4">Matemática Financeira</a></li>
+        <li><a href="#secao5">Ferramentas Digitais</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="secao1">
+      <h3>1. Estatística e Probabilidade: Conceitos Fundamentais</h3>
+      <div class="conteudo-flex">
+        <img src="1.png" alt="">
+        <div class="texto">
+          <p>
+            A estatística e a probabilidade estão presentes no nosso dia a dia, ajudando a entender o mundo e tomar decisões com mais consciência diante de riscos e incertezas. Também, a matemática financeira e ferramentas digitais são importantes para planejar o orçamento pessoal e alcançar metas financeiras.
+          </p>
+          <br>
+          <button class="saiba-mais" onclick="openModal('modal1')">Saiba Mais</button>
+        </div>
+      </div>
+    </section>
+  
+    <section id="secao2">
+      <h3>2. Análise de Dados em Pesquisas</h3>
+      <div class="conteudo-flex">
+        <img src="2.png" alt="">
+        <div class="texto">
+          <p>
+            Em política, esportes e marketing, a análise de dados é essencial para prever resultados e melhorar desempenho. Ferramentas visuais como gráficos facilitam a compreensão e ajudam a tomar decisões mais eficazes e fundamentadas.
+          </p>
+          <br>
+          <button class="saiba-mais" onclick="openModal('modal2')">Saiba Mais</button>
+        </div>
+      </div>
+    </section>
+  
+    <section id="secao3">
+      <h3>3. A Probabilidade no Dia a Dia</h3>
+      <div class="conteudo-flex">
+        <img src="3.png" alt="">
+        <div class="texto">
+          <p>
+            A probabilidade está presente no dia a dia, como na loteria ou previsão do tempo, e nos ajuda a tomar decisões mais racionais ao avaliar riscos e consequências. Entender essas chances evita decisões impulsivas, especialmente em jogos de azar.
+          </p>
+          <br>
+          <button class="saiba-mais" onclick="openModal('modal3')">Saiba Mais</button>
+        </div>
+      </div>
+    </section>
+  
+    <section id="secao4">
+      <h3>4. Matemática Financeira e Planejamento Orçamentário</h3>
+      <div class="conteudo-flex">
+        <img src="4.png" alt="">
+        <div class="texto">
+          <p>
+            A matemática financeira ajuda a controlar o dinheiro, entendendo juros, descontos e inflação, importantes para financiamentos, investimentos e compras a prazo. Com tabelas e gráficos, facilita o planejamento orçamentário para evitar dívidas e alcançar metas financeiras.
+          </p>
+          <br>
+          <button class="saiba-mais" onclick="openModal('modal4')">Saiba Mais</button>
+        </div>
+      </div>
+    </section>
+  
+    <section id="secao5">
+      <h3>5. Ferramentas Digitais para Controle Financeiro</h3>
+      <div class="conteudo-flex">
+        <img src="5.png" alt="">
+        <div class="texto">
+          <p>
+            A tecnologia facilitou o controle financeiro com aplicativos e planilhas que registram receitas, despesas e investimentos. Essas ferramentas ajudam a evitar desperdícios, promovem hábitos saudáveis e garantem decisões econômicas mais seguras e equilibradas.
+          </p>
+          <br>
+          <button class="saiba-mais" onclick="openModal('modal5')">Saiba Mais</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Exemplo de Probabilidade</h3>
+      <p>
+        <strong>Problema:</strong><br />
+        Qual a probabilidade de sair um número par ao lançar um dado de 6 faces?<br /><br />
+        <strong>Solução:</strong><br />
+        ● Números pares em um dado: 2, 4, 6 (3 possibilidades)<br />
+        ● Total de resultados possíveis: 6<br /><br />
+        Probabilidade é 3 em 6, que equivale a 1 em 2, ou seja, 50%.
+      </p>
+    </section>
+
+    <section>
+      <h3>Podcast</h3>
+      <audio controls>
+        <source src="podcastmatematica .mp3" type="audio/mpeg" />
+        Seu navegador não suporta áudio.
+      </audio>
+    </section>
+
+    <section>
+      <h1>Quiz Interativo</h1>
+      <form id="quizForm" aria-label="Formulário de perguntas e respostas">
+        <fieldset>
+          <legend>1. Qual é a fórmula do perímetro de um retângulo?</legend>
+          <label><input type="radio" name="q1" value="0" /> P = base × altura</label>
+          <label><input type="radio" name="q1" value="2" /> P = 2 × (base + altura)</label>
+          <label><input type="radio" name="q1" value="0" /> P = base + altura</label>
+        </fieldset>
+        <fieldset>
+          <legend>2. Qual é a média aritmética dos números 5, 8 e 11?</legend>
+          <label><input type="radio" name="q2" value="0" /> 11</label>
+          <label><input type="radio" name="q2" value="2" /> 8</label>
+          <label><input type="radio" name="q2" value="0" /> 5</label>
+        </fieldset>
+        <fieldset>
+          <legend>3. Qual tipo de juros é calculado apenas sobre o valor inicial?</legend>
+          <label><input type="radio" name="q3" value="2" /> Juros simples</label>
+          <label><input type="radio" name="q3" value="0" /> Juros compostos</label>
+          <label><input type="radio" name="q3" value="0" /> Juros descontados</label>
+        </fieldset>
+        <fieldset>
+          <legend>4. Qual a probabilidade de sair número par ao lançar um dado?</legend>
+          <label><input type="radio" name="q4" value="2" /> 50%</label>
+          <label><input type="radio" name="q4" value="0" /> 30%</label>
+          <label><input type="radio" name="q4" value="0" /> 70%</label>
+        </fieldset>
+        <fieldset>
+          <legend>5. Para que serve um planejamento financeiro?</legend>
+          <label><input type="radio" name="q5" value="2" /> Para organizar receitas e despesas</label>
+          <label><input type="radio" name="q5" value="0" /> Para ganhar dinheiro rápido</label>
+          <label><input type="radio" name="q5" value="0" /> Para evitar estudar matemática</label>
+        </fieldset>
+        <button type="submit">Ver Resultado</button>
+      </form>
+      <div id="resultado" aria-live="polite"></div>
+      <script src="script.js"></script>
+    </section>
+
+    <section>
+      <h3>Jogo sobre matemática</h3>
+      <iframe src="https://phet.colorado.edu/sims/html/mean-share-and-balance/latest/mean-share-and-balance_pt_BR.html" width="800" height="600" allowfullscreen=""></iframe>
+    </section>
+
+    <!-- Modais -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Conceitos Fundamentais</h2>
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu4Tui0uPFbZiKPyD930twhWmfWOJ1tt_VmMO5YEumDzgkFDjH" alt="">        
+        <p>
+          A estatística envolve reunir e organizar informações para interpretar resultados de forma clara. A probabilidade, por sua vez, calcula a chance de algo ocorrer. Combinando esses conhecimentos, conseguimos identificar tendências e fazer escolhas fundamentadas. Por exemplo, um hospital pode analisar dados de pacientes para verificar se um remédio é eficaz; previsões do tempo indicam a probabilidade de chuva; e uma loja estuda as preferências dos clientes para melhorar suas vendas.
+        </p>
+      </div>
+    </div>
+
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Análise de Dados</h2>
+        <img src="https://static-prodigio.b-cdn.net/Matem%C3%A1tica/ESTAT%C3%8DSTICA:%20GR%C3%81FICOS%20E%20TABELAS/estatisticas%20graficos-17.png" alt="">
+        <p>
+          A interpretação de informações é crucial em setores como política, esportes e publicidade. Por exemplo, sondagens eleitorais utilizam números para antecipar o resultado das eleições e captar as preferências dos eleitores. No mundo esportivo, treinadores estudam estatísticas para aprimorar a performance dos jogadores. Ferramentas visuais como gráficos e tabelas tornam esses dados mais acessíveis, ajudando a identificar padrões e orientar escolhas mais acertadas. Dessa forma, decisões são tomadas com base em evidências concretas, aumentando sua eficácia.
+        </p>
+      </div>
+    </div>
+
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Probabilidade no Dia a Dia</h2>
+        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/newr7/LGNLX4DDJJNFZDQS3IG5IT7EJE.jpg" alt="">
+        <p>
+          A probabilidade aparece em várias situações comuns do dia a dia. Ao escolher participar de um sorteio, como na loteria, avaliamos as chances de ganhar um prêmio. Quando consultamos a previsão do tempo para decidir se vamos sair de casa, usamos essa ideia para saber se devemos levar um guarda-chuva. Entender essas probabilidades auxilia a fazer escolhas mais sensatas, como evitar apostar grandes quantias em jogos de azar sabendo que as chances são pequenas. Assim, conseguimos analisar os riscos antes de agir e evitar decisões baseadas em ilusões ou impulsos.
+        </p>
+      </div>
+    </div>
+
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        <h2>Matemática Financeira</h2>
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQiC-b8lc-4gjjAHYksGN-Nfc2fb8TNwcINnvZ4QZQ2q52L3pSBDgGhRMkzMxpg9wfvFLyVcQ1Oloaq0ZzrNkP1adJ0yINFnYnAUhGmdRCVg5Ly8B33dc43M43_mEgsYYsniYXAJF1JxfK/s1600/Sem+t%25C3%25ADtulod.png" alt="">
+        <p>
+          A tecnologia facilitou o gerenciamento financeiro por meio de aplicativos e planilhas que registram ganhos e gastos, além de ajudar no acompanhamento de investimentos e objetivos. Por exemplo, um app pode enviar alertas quando o usuário ultrapassa o orçamento mensal, enquanto uma planilha detalhada mostra onde o dinheiro está sendo gasto. Esses recursos ajudam a detectar gastos desnecessários e incentivam escolhas mais conscientes, como reduzir compras impulsivas. Incorporar essas ferramentas na rotina diária contribui para manter as finanças organizadas e tomar decisões econômicas mais seguras.
+        </p>
+      </div>
+    </div>
+
+    <div id="modal5" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal5')">&times;</span>
+        <img src="https://i.ytimg.com/vi/cbgioyvvLxU/hqdefault.jpg" alt="">
+        <h2>Ferramentas Digitais</h2>
+        <p>
+          A tecnologia facilitou o gerenciamento financeiro por meio de aplicativos e planilhas que registram ganhos e gastos, além de ajudar no acompanhamento de investimentos e objetivos. Por exemplo, um app pode enviar alertas quando o usuário ultrapassa o orçamento mensal, enquanto uma planilha detalhada mostra onde o dinheiro está sendo gasto. Esses recursos ajudam a detectar gastos desnecessários e incentivam escolhas mais conscientes, como reduzir compras impulsivas. Incorporar essas ferramentas na rotina diária contribui para manter as finanças organizadas e tomar decisões econômicas mais seguras.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+        <p>Projeto Integrador de Matemática SESI-SENAI © 2025</p>
+        <p> 3° Ano do Ensino Médio - Turma B | Carlos Daniel Veiga </p>
+    </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

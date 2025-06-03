@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #3f0d0d;
+  color: #582121;
+  line-height: 1.6;
+}
+
+/* Topo */
+.top-bar {
+  background-color: #582121;
+  color: #ffffff;
+  padding: 2rem 3rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.logo-text {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #daa520;
+}
+
+/* Carrossel */
+.carousel-section {
+  padding: 2rem;
+  text-align: center;
+  color: #ffe4c5;
+  background-color: #3f0d0d;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  min-width: 200px;
+  background-color: #ffe4c5;
+  border: 2px solid #582121;
+  color: #3E2C23;
+  border-radius: 10px;
+  padding: 2rem;
+  flex: 0 0 auto;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Vídeo + Biografia */
+.video-section {
+  background-color: #ffe4c5;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.video-bio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.video-bio iframe {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.bio {
+  max-width: 400px;
+  text-align: left;
+}
+
+.bio h3 {
+  color: #3f0d0d;
+  margin-bottom: 0.5rem;
+}
+
+/* Quiz */
+.quiz-section {
+  background-color: #3f0d0d;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #ffe4c5;
+}
+
+.quiz-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.quiz {
+  flex: 1 1 500px;
+  order: 1;
+}
+
+.imagem {
+  flex: 0 0 400px;
+  order: 2;
+  text-align: center;
+  margin-right: 200px;
+}
+
+.imagem img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #582121;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.15);
+  margin-right: 80px;
+}
+
+.quiz button {
+  background-color: #582121;
+  color: #ffe4c5;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quiz button:hover {
+  background-color: #ffe4c5;
+  color: #582121;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #582121;
+  color: #daa520;
+  padding: 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 2px #ffe4c5;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #582121, #582121);
+  border-radius: 2px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #ffe4c5;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(61, 58, 58, 0.08);
+  padding: 25px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px #6e5c47;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #582121, #582121);
+}
+
+.card-header {
+  border-bottom: 2px solid #582121;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  position: relative;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card h3 {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  color: #7f8c8d;
+  font-weight: normal;
+}
+
+.card-content ul {
+  padding-left: 20px;
+}
+
+.card-content li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.neocolonialismo {
+  border-top: 4px solid #582121;
+}
+
+.multinacionais {
+  border-top: 4px solid #582121;
+}
+
+.section-title {
+  grid-column: 1 / -1;
+  text-align: center;
+  background: linear-gradient(135deg, #582121, #582121);
+  color: #ffe4c5;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 30px 0 15px 0;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* Estilo específico para o card de livros */
+.card.livros {
+  grid-column: 1 / -1;
+  background: linear-gradient(to bottom right, #ffe4c5, #ffe4c5);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card.livros .card-header {
+  border-bottom-color: #582121;
+  text-align: center;
+}
+
+.card.livros .card-header h2 {
+  color: #582121;
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+}
+
+.livros-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.capa-livro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  padding: 15px;
+  border-radius: 8px;
+  background: #582121;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.capa-livro:hover {
+  transform: translateY(-5px);
+  background: #582121;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.capa-livro img {
+  width: 180px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border: 1px solid #582121;
+}
+
+.capa-livro:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+.capa-livro p {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.95rem;
+  color:  #ffe4c5;
+  
+}
+
+.bio {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  max-width: 800px;
+  text-align: left;
+}
+
+.bio p {
+  flex: 1;
+}
+
+.bio img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #582121;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.btn-voltar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+  background-color: #381313;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.btn-voltar:hover {
+  background-color: #280a0a;
+  transform: translateY(-1px);
+}

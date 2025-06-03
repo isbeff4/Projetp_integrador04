@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skimming e Scanning</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <header class="navbar">
+    <img src="logo2.png" alt="Logo do Site" class="logo" />
+    <nav class="navbar-menu">
+      <ul class="nav-list">
+        <li><a href="#introducao">Início</a></li>
+        <li><a href="#skimming">Skimming</a></li>
+        <li><a href="#scanning">Scanning</a></li>
+        <li><a href="#quiz">Atividade</a></li>
+      </ul>
+    </nav>
+    <a href="../index.html" class="btn-voltar">Voltar</a>
+  </header>
+  <section id="introducao" class="intro">
+    <h1>Técnicas de Leitura em Inglês</h1>
+    <p>
+      A leitura é uma das habilidades mais importantes no processo de aprendizagem da língua inglesa. Ela contribui
+      para a ampliação do vocabulário, o entendimento das estruturas gramaticais e o contato com diferentes aspectos
+      culturais. No entanto, apenas ler palavra por palavra não é suficiente para uma compreensão eficaz. Para isso, é
+      essencial utilizar estratégias de leitura que tornem esse processo mais dinâmico e produtivo.<br><br>
+
+      Entre essas estratégias, destacam-se o skimming, que consiste em captar a ideia geral do texto, e o scanning, que
+      foca na localização rápida de informações específicas. O uso consciente dessas técnicas permite que o estudante
+      leia com mais propósito, economize tempo e compreenda melhor o conteúdo. Assim, além de melhorar a fluência, essas
+      estratégias desenvolvem a autonomia do aprendiz e facilitam a aplicação prática do inglês em diferentes contextos.
+    </p>
+  </section>
+
+  <section class="imagem-tematica">
+    <img
+      src="https://lh6.googleusercontent.com/7FgwmpiawHlf8zc23O27YpC-PklkSBAfEYfmD91Ef4wEXAG6QTcjVwT-h_E_eGpW8nA-PC-3ZsDDJv1hVl-86EzfbuQk2bGkKjQioUuyOZ2K0_-aKj5amqQMF4g6cGakpPFUWGoSvrfmJ6DY99N7RM4"
+      alt="Leitura temática" />
+  </section>
+
+
+
+  <section id="skimming" class="estrategia">
+    <h2>Skimming (Leitura Superficial)</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Definição</h3>
+        <button onclick="toggleCard('definicaoSkimming')">Ver definição</button>
+        <p id="definicaoSkimming" class="hidden">
+          Skimming é uma técnica de leitura rápida usada para captar a ideia principal e os pontos mais importantes de
+          um texto. O leitor percorre o conteúdo com os olhos, focando em títulos, subtítulos, primeiras frases de
+          parágrafos e palavras-chave. Muito útil em exames como TOEFL e IELTS, essa estratégia ajuda a economizar
+          tempo, selecionar informações relevantes e compreender o conteúdo geral de forma eficiente.
+        </p>
+
+
+      </div>
+      <div class="card">
+        <h3>Quando Usar + Exemplos</h3>
+        <button onclick="toggleCard('quandoSkimming')">Ver informações</button>
+        <p id="quandoSkimming" class="hidden">
+          O skimming deve ser usado quando é necessário obter uma visão geral do texto em pouco tempo. É útil para
+          decidir se um conteúdo é relevante em pesquisas, estudos e tarefas. Exemplos comuns incluem: procurar matérias
+          em revistas ou jornais, selecionar artigos acadêmicos para um trabalho, ou responder questões em exames como
+          Enem, TOEFL e vestibulares. Também é aplicado ao navegar por sites e blogs, ajudando a encontrar rapidamente
+          informações importantes sem ler tudo.
+        </p>
+
+      </div>
+      <div class="card">
+        <h3>Técnicas Relacionadas</h3>
+        <button onclick="toggleCard('tecnicasSkimming')">Ver técnicas</button>
+        <p id="tecnicasSkimming" class="hidden">
+          O skimming envolve técnicas como ler títulos, subtítulos e primeiras ou últimas frases dos parágrafos.
+          Palavras em destaque, como negrito, itálico e listas, ajudam a identificar as ideias principais. O olhar deve
+          percorrer o texto de forma ampla, sem seguir linha por linha. Ignorar detalhes e focar em palavras-chave
+          permite captar rapidamente o conteúdo essencial e decidir se é necessário ler com mais atenção.
+        </p>
+
+
+      </div>
+    </div>
+    <div class="dicas-erros">
+      <div>
+        <div>
+          <h3>Dicas</h3>
+          <p>
+          <ul>
+            <li>Atentar para a estrutura do texto e como ele está disposto.</li>
+            <li>Observar o formato do texto (entrevista, história, receita, e-mail, carta, artigo).</li>
+            <li>Analisar imagens, títulos e subtítulos.</li>
+            <li>Ler as palavras iniciais e finais dos parágrafos.</li>
+            <li>Usar o conhecimento prévio sobre o assunto.</li>
+            <li>Aprofundar-se nas estruturas gramaticais do texto.</li>
+            <li>Prestar atenção ao contexto em que o texto está colocado.</li>
+            <li>Identificar as ideias principais e os pontos-chave.</li>
+            <li>Não ler o texto de cima para baixo e da direita para a esquerda, mas sim em diagonal ou zigue-zague.
+            </li>
+            <li>Focar em palavras-chave e frases específicas.</li>
+          </ul>
+          </p>
+        </div>
+        <div>
+          <h3>Erros Comuns</h3>
+          <p>
+          <ul>
+            <li>Não ter conhecimento prévio da língua inglesa (vocabulário).</li>
+            <li>Confiar demais nas pressuposições e hipóteses sem confirmar no texto.</li>
+            <li>Não prestar atenção na construção de sentido da leitura.</li>
+            <li>Não usar sinais visuais como formatação e pontuação.</li>
+            <li>Ler palavra por palavra, o que diminui a velocidade.</li>
+            <li>Não resumir as ideias principais do texto.</li>
+            <li>Não identificar o objetivo da leitura.</li>
+            <li>Não praticar a técnica regularmente.</li>
+            <li>Não adaptar a técnica ao tipo de texto.</li>
+            <li>Não combinar o skimming com outras técnicas de leitura.</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="aplicacoes-video">
+      <h3>Skimming na prática</h3>
+      <p>Assita o vídeo a seguir para saber como o Skimming é na prática!</p>
+      <div class="video-upload">
+        <video controls>
+          <source src="video1.mp4" type="video/mp4">
+          Seu navegador não suporta a tag de vídeo.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section id="scanning" class="estrategia">
+    <h2>Scanning (Leitura por Busca)</h2>
+    <h3>Definição</h3>
+    <p>
+      Scanning é uma técnica de leitura usada para localizar rapidamente informações específicas, como datas, nomes,
+      números ou palavras-chave, sem precisar ler o texto inteiro. Ao contrário do skimming, que busca uma ideia geral,
+      o scanning é focado e direcionado. É útil quando o leitor já sabe o que está procurando — como uma resposta, dado
+      ou termo específico — e varre o texto com os olhos, ignorando trechos irrelevantes. Pistas visuais como letras
+      maiúsculas, números, símbolos ou elementos gráficos ajudam a identificar a informação desejada. Essa técnica é
+      ideal para economizar tempo em provas, listas, notícias ou pesquisas.
+    </p>
+
+    <br><br>
+    <h3>Técnicas Relacionadas</h3>
+    <p>
+      Para aplicar o scanning com eficácia, é essencial saber o que se procura antes de começar a leitura, como datas,
+      nomes ou números. O leitor deve mover os olhos pelo texto ignorando partes irrelevantes, focando em pistas visuais
+      como palavras em negrito, números, listas, maiúsculas e gráficos. Técnicas como leitura em zigue-zague ou por
+      colunas aceleram a localização. Reconhecer rapidamente padrões visuais também ajuda. Essas estratégias tornam a
+      leitura mais ágil e eficiente, especialmente em provas, pesquisas ou textos informativos.
+    </p>
+
+
+    <div class="imagem-exemplo">
+      <h3>Quando Usar + Exemplos</h3>
+      <div class="imagem-upload">
+        <section class="imagem-tematica">
+          <img src="dica-e-erros-scanning.png" alt="Leitura temática" />
+        </section>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="card">
+        <h3>Dicas</h3>
+        <button onclick="toggleCard('dicasScanning')">Ver dicas</button>
+        <div id="dicasScanning" class="hidden">
+          <ul>
+            <li>Defina claramente o que você está procurando (palavra-chave, número, nome, etc.).</li>
+            <li>Mova seus olhos rapidamente pela página, seguindo linhas ou colunas.</li>
+            <li>Não se preocupe em entender o significado geral do texto.</li>
+            <li>Use seus dedos ou uma caneta para guiar seus olhos de forma mais eficiente.</li>
+            <li>Procure por padrões visuais que possam indicar a informação desejada (negrito, itálico, números).</li>
+            <li>Seja específico em sua busca. Quanto mais específico, mais rápido você encontrará a informação.</li>
+            <li>Pratique regularmente para aumentar sua velocidade e precisão.</li>
+            <li>Varie sua técnica de acordo com o tipo de texto e a informação que você busca.</li>
+            <li>Mantenha o foco e evite distrações.</li>
+            <li>Se a informação não estiver óbvia, tente sinônimos ou termos relacionados.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Erros Comuns</h3>
+        <button onclick="toggleCard('errosScanning')">Ver erros</button>
+        <div id="errosScanning" class="hidden">
+          <ul>
+            <li>Não ter clareza sobre o que se está procurando.</li>
+            <li>Ler o texto palavra por palavra, perdendo a velocidade do scanning.</li>
+            <li>Focar em informações desnecessárias.</li>
+            <li>Não usar guias visuais (dedo, caneta) para ajudar na leitura rápida.</li>
+            <li>Deixar os olhos vagarem aleatoriamente pela página sem um padrão.</li>
+            <li>Desistir muito rápido se a informação não for encontrada imediatamente.</li>
+            <li>Não adaptar a velocidade da leitura à dificuldade do texto ou à densidade da informação.</li>
+            <li>Assumir que a informação estará em um determinado lugar sem verificar outras seções.</li>
+            <li>Distrair-se com outras informações interessantes no texto.</li>
+            <li>Não praticar a técnica, o que impede o desenvolvimento da habilidade.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="aplicacoes-video">
+      <h3>Scanning na prática</h3>
+      <p>Assita o vídeo a seguir para saber como o Scanning é na prática!</p>
+      <div class="video-upload">
+        <video controls>
+          <source src="video2.mp4" type="video/mp4">
+          Seu navegador não suporta a tag de vídeo.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section class="tabela-container">
+    <h2>Comparação entre Skimming e Scanning</h2>
+    <div class="tabela-wrapper">
+      <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Característica</th>
+            <th>Skimming (Leitura Seletiva)</th>
+            <th>Scanning (Leitura de Busca)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Objetivo Principal</td>
+            <td>Obter uma compreensão geral e superficial.</td>
+            <td>Localizar informações específicas.</td>
+          </tr>
+          <tr>
+            <td>Foco da Leitura</td>
+            <td>Ideias principais, estrutura, tom geral.</td>
+            <td>Palavras-chave, dados específicos (nomes, números).</td>
+          </tr>
+          <tr>
+            <td>Velocidade de Leitura</td>
+            <td>Rápida, mas com alguma atenção a frases chave.</td>
+            <td>Extremamente rápida, "passar o olho" direcionado.</td>
+          </tr>
+          <tr>
+            <td>Técnicas Principais</td>
+            <td>Ler introdução e conclusão, primeiras frases de parágrafos, observar
+              títulos e visuais.</td>
+            <td>Buscar palavras-chave, ignorar partes irrelevantes, movimento ocular em
+              padrão.</td>
+          </tr>
+          <tr>
+            <td>Nível de Compreensão</td>
+            <td>Compreensão geral da essência do texto.</td>
+            <td>Compreensão mínima do contexto, foco na localização.</td>
+          </tr>
+          <tr>
+            <td>Contextos Ideais</td>
+            <td>Avaliar relevância, obter visão geral, revisão rápida.</td>
+            <td>Encontrar dados específicos em listas, tabelas, textos.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="conclusao">
+    <h2>🧠 Skimming vs Scanning – Resumo Geral</h2>
+    <p><strong>Definição:</strong> Skimming = captar o sentido geral; Scanning = localizar info específica.<br>
+      <strong>Quando usar:</strong> Skimming para ter visão global; Scanning para achar dados pontuais.<br>
+      <strong>Exemplo de uso:</strong> Skimming ao ler manchetes; Scanning ao buscar datas ou nomes.<br>
+      <strong>Técnicas relacionadas:</strong> Skimming usa títulos e palavras-chave; Scanning foca em padrões
+      visuais.<br>
+      <strong>Dicas úteis:</strong> Tenha objetivo claro; leia com foco no que quer encontrar.<br>
+      <strong>Erros comuns:</strong> No Skimming, querer entender tudo; no Scanning, ler sem direção.<br>
+      <strong>Aplicações em prova:</strong> Skimming ajuda em textos longos; Scanning em questões diretas e objetivas.
+    </p>
+    <div class="card-mapa">
+      <button class="btn-mapa" onclick="mostrarMapa()">QUER ESTUDAR PARA A PROVA? CLIQUE AQUI PARA VER NOSSO MAPA
+        MENTAL!</button>
+      <div id="mapaMental" class="oculto mapa-container">
+        <img src="mapa.png" alt="Mapa Mental" />
+        <a href="mapa.png" download class="btn-download">Baixar Mapa Mental</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="podcast">
+    <h2>Podcast - Inglês em Foco</h2>
+    <div class="podcast-content">
+      <img src="ingles em foco.png" alt="Logo do Podcast" class="podcast-img" />
+      <p class="podcast-text">🎙️ Sejam bem-vindos ao <strong>INGLÊS EM FOCO</strong>!<br><br>
+        Um podcast de Guilherme Delfino, estudante apaixonado por inglês. Aqui você ouve bate-papos com convidados sobre
+        leitura, cultura, estudo, vivências e muito mais. Tudo para te ajudar a aprender inglês de forma prática e no
+        seu dia a dia. Prepara os fones, o inglês está em foco!
+      </p>
+    </div>
+
+  </section>
+
+
+  <section class="podcast">
+    <h2>Podcasts</h2>
+
+    <div class="card">
+      <h3>Podcast 1</h3>
+      <button id="btnResumo1">Saiba Mais</button>
+      <div id="resumo1" class="hidden">
+        <p>Nesse episódio, Guilherme e Gustavo explicam de forma leve e prática duas técnicas que vão acelerar sua
+          leitura em inglês: o skimming, para entender rapidamente o assunto de um texto, e o scanning, para encontrar
+          informações específicas num piscar de olhos. Uma conversa dinâmica cheia de dicas pra você ler com mais foco
+          e eficiência!</p>
+        <audio controls src="podcast 1.mp3"></audio>
+      </div>
+    </div>
+    <br><br>
+    <div class="card">
+      <h3>Podcast 2</h3>
+      <button id="btnResumo2">Saiba Mais</button>
+      <div id="resumo2" class="hidden">
+        <p> Nesse episódio, Guilherme convida seu grande amigo Lucas para uma conversa especial com o professor
+          Alexander Justino, que traz uma verdadeira aula sobre as estratégias de leitura em inglês! Em uma entrevista
+          leve e cheia de insights, eles discutem a importância do skimming e do scanning no aprendizado da língua, na
+          leitura de textos acadêmicos e até no dia a dia profissional. O professor ainda compartilha desafios comuns
+          enfrentados pelos alunos e dá dicas valiosas para dominar essas técnicas. Um bate-papo imperdível pra quem
+          quer ler em inglês com mais foco, agilidade e propósito!</p>
+        <audio controls src="Podcast 2.mp3"></audio>
+      </div>
+    </div><br><br>
+
+    <section id="quiz">
+      <h1>Exercícios Práticos: Aprimorando Skimming e Scanning em Inglês!</h1>
+      <p><strong>Instruções:</strong> Leia os textos fornecidos utilizando as técnicas de <em>skimming</em> e
+        <em>scanning</em>. Escolha a alternativa correta.
+      </p>
+
+      <div class="texto"><strong>Texto 1:</strong> The impact of social media on society is a widely debated topic.
+        While it offers numerous benefits such as instant communication and global connectivity, it also presents
+        challenges related to privacy, misinformation, and mental well-being. Studies have explored the correlation
+        between excessive social media use and increased levels of anxiety and depression, particularly among young
+        adults. Furthermore, the spread of unverified information through these platforms can have significant
+        real-world consequences. However, social media has also played a crucial role in social movements and
+        political
+        activism, providing a platform for marginalized voices to be heard and for collective action to be organized.
+        The key seems to lie in understanding its potential and using it responsibly.
+      </div>
+      <div class="pergunta">
+        <p>1. Qual é o tema central deste texto?</p>
+        <label><input type="radio" name="q1" value="b"> a) The history of social media platforms.</label><br>
+        <label><input type="radio" name="q1" value="b" checked> b) The positive and negative effects of social
+          media.</label><br>
+        <label><input type="radio" name="q1" value="c"> c) How to use social media for business.</label>
+      </div>
+      <div class="pergunta">
+        <p>2. Qual grupo etário é particularmente afetado?</p>
+        <label><input type="radio" name="q2" value="a"> a) Older adults.</label><br>
+        <label><input type="radio" name="q2" value="b"> b) Young adults.</label><br>
+        <label><input type="radio" name="q2" value="c"> c) Children.</label>
+      </div>
+
+      <div class="texto"><strong>Texto 2:</strong> The Amazon rainforest, often referred to as the "lungs of the
+        Earth,"
+        is the world's largest tropical rainforest, covering an area of approximately 5.5 million square kilometers.
+        It
+        is home to an estimated 10% of all known plant and animal species on the planet. The biodiversity within the
+        Amazon is unparalleled, with countless species still undiscovered. This vast ecosystem plays a crucial role in
+        regulating global climate patterns and absorbing significant amounts of carbon dioxide. However,
+        deforestation,
+        driven by agriculture, logging, and mining, poses a severe threat to its survival and has far-reaching
+        environmental consequences. Conservation efforts are vital to protect this invaluable natural resource.
+      </div>
+      <div class="pergunta">
+        <p>3. Qual é a área aproximada da Floresta Amazônica?</p>
+        <label><input type="radio" name="q3" value="a"> a) 55 million square kilometers.</label><br>
+        <label><input type="radio" name="q3" value="b"> b) 5.5 million square kilometers.</label><br>
+        <label><input type="radio" name="q3" value="c"> c) 10 million square kilometers.</label>
+      </div>
+      <div class="pergunta">
+        <p>4. Qual porcentagem estimada de espécies vive na Amazônia?</p>
+        <label><input type="radio" name="q4" value="a"> a) 5%</label><br>
+        <label><input type="radio" name="q4" value="b"> b) 15%</label><br>
+        <label><input type="radio" name="q4" value="c"> c) 10%</label>
+      </div>
+
+      <div class="texto"><strong>Texto 3:</strong>The latest report from the World Health Organization (WHO) indicates
+        a
+        global increase in cases of influenza this winter. The report highlights that the dominant strain circulating
+        is
+        Influenza A (H3N2). Vaccination remains the most effective way to prevent infection and severe illness. The
+        WHO
+        recommends annual vaccination, particularly for high-risk groups such as the elderly, young children, and
+        individuals with underlying health conditions. The report also emphasizes the importance of practicing good
+        hygiene, such as frequent handwashing and covering coughs and sneezes, to limit the spread of the virus.</div>
+      <div class="pergunta">
+        <p>5. Qual organização publicou o relatório?</p>
+        <label><input type="radio" name="q5" value="a"> a) United Nations (UN).</label><br>
+        <label><input type="radio" name="q5" value="b"> b) World Health Organization (WHO).</label><br>
+        <label><input type="radio" name="q5" value="c"> c) International Red Cross.</label>
+      </div>
+      <div class="pergunta">
+        <p>6. Qual é a cepa dominante de influenza neste inverno?</p>
+        <label><input type="radio" name="q6" value="a"> a) Influenza B.</label><br>
+        <label><input type="radio" name="q6" value="b"> b) Influenza A (H1N1).</label><br>
+        <label><input type="radio" name="q6" value="c"> c) Influenza A (H3N2).</label>
+      </div>
+
+      <div class="texto"><strong>Texto 4:</strong> The impact of social media on society is a widely debated topic.
+        While it offers numerous benefits such as instant communication and global connectivity, it also presents
+        challenges related to privacy, misinformation, and mental well-being. Studies have explored the correlation
+        between excessive social media use and increased levels of anxiety and depression, particularly among young
+        adults. Furthermore, the spread of unverified information through these platforms can have significant
+        real-world consequences. However, social media has also played a crucial role in social movements and
+        political
+        activism, providing a platform for marginalized voices to be heard and for collective action to be organized.
+        The key seems to lie in understanding its potential and using it responsibly.
+      </div>
+      <div class="pergunta">
+        <p>7. Qual é o foco principal do texto?</p>
+        <label><input type="radio" name="q7" value="a"> a) The history of artificial intelligence.</label><br>
+        <label><input type="radio" name="q7" value="b"> b) The ethical concerns surrounding artificial
+          intelligence.</label><br>
+        <label><input type="radio" name="q7" value="c"> c) The applications and potential of artificial
+          intelligence.</label>
+      </div>
+      <div class="pergunta">
+        <p>8. Qual subcampo da IA permite que computadores aprendam com dados?</p>
+        <label><input type="radio" name="q8" value="a"> a) Robotics.</label><br>
+        <label><input type="radio" name="q8" value="b"> b) Machine learning.</label><br>
+        <label><input type="radio" name="q8" value="c"> c) Natural language processing.</label>
+      </div>
+
+      <button onclick="corrigir()">Enviar Respostas</button>
+
+      <div id="resultado"></div>
+      <div id="explicacoes"></div>
+    </section>
+
+    <button id="topo" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script defer src="script.js"></script>
+
+    <footer>
+      <p>ⓒ Guilherme Delfino - Projeto Integrador 2025<br>
+        Escola Sesi Ourinhos | Escola SENAI Ourinhos
+      </p>
+    </footer>
+</body>
+
+</html>

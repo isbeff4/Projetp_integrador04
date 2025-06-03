@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pré-Modernismo no Brasil</title>
+    <link rel="stylesheet" href="css_portugues.css" />
+</head>
+<body>
+    <header>
+        <h1>O Pré-Modernismo no Brasil</h1>
+        <p>Uma fase de transição repleta de críticas sociais e rupturas com o passado literário</p><br>
+        <nav id="menu-secoes">
+          <ul>
+              <li><a href="#introducao">Introdução</a></li>
+              <li><a href="#contexto">Contexto Histórico</a></li>
+              <li><a href="#caracteristicas">Características</a></li>
+              <li><a href="#autores">Autores</a></li>
+              <li><a href="#podcast">Podcast</a></li>
+              <li><a href="#infografico">Infográfico</a></li>
+              <li><a href="#conclusao">Conclusão</a></li>
+              <li><a href="#questoes">Questões</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <a href="../index.html" class="btn-voltar">Voltar</a>
+    
+
+    <main>
+        <section id="introducao">
+            <h2>1. Introdução ao Pré-Modernismo</h2>
+            <p>
+                O Pré-Modernismo brasileiro foi um período literário que marcou a transição entre o final do século XIX e o início do século XX, mais precisamente entre 1902 e 1922. Ele não constituiu um movimento coeso, mas sim uma fase caracterizada por autores que romperam com os moldes estéticos anteriores, ao mesmo tempo que prepararam o terreno para a revolução modernista de 1922.
+            </p>
+            <p>
+                Essa fase literária nasceu em meio a um cenário de intensas transformações políticas e sociais no Brasil, como a Proclamação da República, a abolição da escravidão e o início da industrialização. Essas mudanças provocaram reflexões críticas sobre a identidade nacional, as desigualdades sociais e a realidade brasileira, especialmente do interior.
+            </p>
+        </section>
+
+        <section id="contexto">
+            <h2>2. Contexto Histórico e Social</h2>
+            <p>Entre os principais marcos históricos que influenciaram a produção pré-modernista, destacam-se:</p>
+            <ul>
+                <li>A Abolição da Escravidão (1888), que não foi acompanhada de políticas de inclusão social;</li>
+                <li>A Proclamação da República (1889), com o domínio político das oligarquias cafeeiras;</li>
+                <li>Movimentos sociais como a Guerra de Canudos (1896-1897) e a Revolta da Vacina (1904);</li>
+                <li>O avanço da urbanização e da industrialização em contraste com a miséria rural;</li>
+                <li>A influência de correntes como o positivismo e o determinismo na formação do pensamento intelectual.</li>
+            </ul>
+        </section>
+
+        <section id="caracteristicas">
+            <h2>3. Características do Pré-Modernismo</h2>
+            <p>Embora não tenha sido um movimento organizado, algumas características são recorrentes nas obras do período:</p>
+            <ul>
+                <li>Crítica social intensa e denúncia das desigualdades;</li>
+                <li>Exploração da realidade nacional, especialmente das regiões marginalizadas;</li>
+                <li>Emprego de linguagem mais acessível e coloquial;</li>
+                <li>Presença de personagens excluídos como sertanejos, imigrantes, negros e mestiços;</li>
+                <li>Combinação de elementos do Realismo, Naturalismo e Simbolismo com novos temas;</li>
+                <li>Rejeição à idealização romântica e à rigidez formal do Parnasianismo.</li>
+            </ul>
+        </section>
+
+        <section id="autores">
+            <h2>4. Principais Autores e Obras</h2>
+            <div class="autores">
+
+                <div class="autor">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Euclides_da_Cunha.jpg" alt="Euclides da Cunha" />
+                    <div class="autor-texto">
+                        <h3>Euclides da Cunha</h3>
+                        <button onclick="toggleInfo('euclides')">Veja mais</button>
+                        <p class="info-autor" id="euclides">
+                            Autor de <em>Os Sertões</em> (1902), obra que analisa a Guerra de Canudos sob uma perspectiva sociológica, geográfica e antropológica. Considerado um marco da literatura brasileira por integrar ciência e literatura, Euclides destaca o conflito entre a civilização e o sertão, expondo as contradições e o abandono das regiões rurais brasileiras.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="autor">
+                    <img src="https://s2.static.brasilescola.uol.com.br/be/2020/05/lima-barreto.jpg" alt="Lima Barreto" />
+                    <div class="autor-texto">
+                        <h3>Lima Barreto</h3>
+                        <button onclick="toggleInfo('lima')">Veja mais</button>
+                        <p class="info-autor" id="lima">
+                            Destacou-se com <em>Triste Fim de Policarpo Quaresma</em> (1915), crítica mordaz ao nacionalismo exagerado e à corrupção política. Foi um dos primeiros autores a retratar com sensibilidade os negros e os pobres no Brasil urbano, denunciando a hipocrisia e desigualdade social da época.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="autor">
+                    <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2021/02/graca-aranha.jpg" alt="Graça Aranha" />
+                    <div class="autor-texto">
+                        <h3>Graça Aranha</h3>
+                        <button onclick="toggleInfo('graca')">Veja mais</button>
+                        <p class="info-autor" id="graca">
+                            Autor de <em>Canaã</em> (1902), aborda o choque cultural entre imigrantes e brasileiros e discute o futuro da nação. Foi um dos primeiros intelectuais a propor a renovação estética que viria com o Modernismo, enfatizando a importância da identidade cultural brasileira.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="autor">
+                    <img src="https://ufmg.br/thumbor/K_zCo4kwYSwp3RhAuN0IgEMCHpo=/0x0:1000x800/1000x800/https://ufmg.br/storage/d/d/2/1/dd21f0dfc47f61c6fb55260263331f7f_16110780460922_180703145.jpg" alt="Monteiro Lobato" />
+                    <div class="autor-texto">
+                        <h3>Monteiro Lobato</h3>
+                        <button onclick="toggleInfo('lobato')">Veja mais</button>
+                        <p class="info-autor" id="lobato">
+                            Com <em>Urupês</em> (1918), introduziu o personagem Jeca Tatu como crítica ao atraso rural e à pobreza. Também foi editor e um dos grandes divulgadores da literatura nacional, participando ativamente da vida intelectual do país e defendendo a valorização da cultura brasileira.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="autor">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Augusto_Anjos.jpg/640px-Augusto_Anjos.jpg" alt="Augusto dos Anjos" />
+                    <div class="autor-texto">
+                        <h3>Augusto dos Anjos</h3>
+                        <button onclick="toggleInfo('augusto')">Veja mais</button>
+                        <p class="info-autor" id="augusto">
+                            Poeta do livro <em>Eu</em> (1912), uniu temas científicos, simbolistas e mórbidos, sendo considerado uma figura única na literatura brasileira, à margem de qualquer escola literária definida. Sua linguagem intensa e singular marcou a literatura nacional.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="podcast">
+          <h2>5. Podcast: Os Sertões</h2>
+          <audio controls>
+            <source src="Podcast_Portugues.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+          </audio>
+        </section>
+
+        <section id="infografico">
+            <h2>6. Infográfico: Visão Geral do Pré-Modernismo</h2>
+            <img src="Infografico.png" alt="Infográfico Pré-Modernismo" class="infografico" />
+        </section>
+
+        <section id="conclusao">
+            <h2>7. Conclusão</h2>
+            <p>
+              O Pré-Modernismo foi mais que uma simples fase de transição: representou um momento decisivo para a consolidação de uma literatura genuinamente brasileira, marcada por um olhar crítico, social e profundamente conectado com as realidades do país. Nesse período, escritores romperam com os modelos idealizados do passado e passaram a explorar temas urgentes como a desigualdade social, o regionalismo, o analfabetismo e as tensões políticas, revelando um Brasil multifacetado e contraditório. Seus autores, ao mesmo tempo em que apontavam as limitações da tradição literária vigente, pavimentaram o caminho para as experimentações estéticas e a liberdade criativa que seriam plenamente desenvolvidas no Modernismo. Assim, o Pré-Modernismo não apenas preparou o terreno para uma nova era artística, mas também reafirmou o papel da literatura como instrumento de reflexão e transformação social.
+            </p>
+        </section>
+
+        <section id="questoes">
+          <h2>8. Questões de Vestibulares Passados</h2>
+            <article class="questao">
+              <h2>Exercício 1 (Fatec/SP)</h2>
+<p><strong>O romance Os Sertões, de Euclides da Cunha, representa uma das principais obras do Pré-Modernismo. Assinale a alternativa que melhor caracteriza esse livro.</strong></p><br>
+<ul>
+<li>A. Uma narrativa mítica sobre a religiosidade do povo sertanejo, escrita com lirismo e subjetividade.</li>
+<li>B. Uma epopeia moderna que enaltece a vitória militar sobre o fanatismo religioso de Canudos.</li>
+<li>C. Uma análise científica e literária do sertão nordestino e da Guerra de Canudos, com enfoque social e crítico.</li>
+<li>D. Um romance naturalista que explora a degeneração moral dos personagens no meio rural.</li>
+<li>E. Uma ficção que narra, de forma romântica, a saga de um herói do sertão.</li>
+</ul>
+
+<details>
+  <summary>Ver Resposta</summary>
+<p><strong>Resposta: Letra C.</strong></p>
+<p>A obra é uma fusão de ciência e literatura, dividida em três partes: "A Terra", "O Homem" e "A Luta", analisando o meio, o sertanejo e o conflito em Canudos com olhar crítico e científico.</p>
+</details>
+</article>
+<br><br>
+<article class="questao">
+          <h2>Exercício 2 (PUC/RS)</h2>
+<p><strong>Assinale a alternativa que não corresponde a uma característica do Pré-Modernismo brasileiro.</strong></p><br>
+<ul>
+<li>A. Linguagem simples e próxima da oralidade.</li>
+<li>B. Ênfase em temas sociais e regionais.</li>
+<li>C. Presença de autores que denunciam problemas brasileiros.</li>
+<li>D. Organização como movimento literário com um manifesto e regras claras.</li>
+<li>E. Representação de personagens marginalizados e tipos populares.</li>
+</ul>
+
+<details>
+<summary>Ver Resposta</summary>
+<p><strong>Resposta: Letra D.</strong></p>
+<p>O Pré-Modernismo não foi um movimento organizado, como o Modernismo; trata-se de uma fase de transição, sem manifesto ou unidade estética.</p>
+</details>
+</article>
+<br><br>
+<article class="questao">
+          <h2>Exercício 3 (UFU/MG)</h2>
+<p><strong>Leia o trecho abaixo:<br><br>
+
+  "[...] O sertanejo é, antes de tudo, um forte."<br>
+  (Os Sertões, Euclides da Cunha)<br><br>
+  
+  A frase destaca uma característica importante da obra:</strong></p><br>
+<ul>
+<li>A. A idealização romântica do herói sertanejo.</li>
+<li>B. A denúncia do determinismo racial sobre o povo nordestino.</li>
+<li>C. A valorização do sertanejo como resistência às adversidades do meio.</li>
+<li>D. A inferioridade do sertanejo diante da cultura urbana.</li>
+<li>E. O apelo emocional ao sofrimento do povo nordestino.</li>
+</ul>
+
+<details>
+<summary>Ver Resposta</summary>
+<p><strong>Resposta: Letra C.</strong></p>
+<p>Euclides da Cunha vê o sertanejo como uma figura resistente, moldada por condições adversas, rompendo com visões preconceituosas.</p>
+</details>
+</article>
+<br><br>
+<article class="questao">
+          <h2>Exercício 4 (ENEM)</h2>
+<p><strong>Assinale a alternativa que apresenta duas obras do Pré-Modernismo brasileiro:</strong></p><br>
+<ul>
+<li>A. Iracema e Senhora</li>
+<li>B. Dom Casmurro e Memórias Póstumas de Brás Cubas</li>
+<li>C. Triste Fim de Policarpo Quaresma e Urupês</li>
+<li>D. Macunaíma e Manifesto Antropofágico</li>
+<li>E. A Moreninha e Inocência</li>
+</ul>
+
+<details>
+<summary>Ver Resposta</summary>
+<p><strong>Resposta: Letra C.</strong></p>
+<p>Triste Fim de Policarpo Quaresma, de Lima Barreto, e Urupês, de Monteiro Lobato, são exemplos clássicos do Pré-Modernismo, com crítica social e linguagem mais coloquial.</p>
+</details>
+</article>
+<br><br>
+<article class="questao">
+          <h2>Exercício 5 (UFRJ)</h2>
+<p><strong>O Pré-Modernismo é considerado uma fase de transição na literatura brasileira porque:</strong></p><br>
+<ul>
+<li>A. Manteve vínculos com formas tradicionais, mas introduziu temas e linguagens mais próximas da realidade brasileira.</li>
+<li>B. Representou um retorno ao Romantismo e à idealização do herói nacional.</li>
+<li>C. Substituiu completamente as tradições anteriores por inovações radicais.</li>
+<li>D. Impôs um novo conjunto de regras e manifestos que guiaram os autores da época.</li>
+<li>E. Foi um período exclusivamente voltado à produção poética.</li>
+</ul>
+
+<details>
+<summary>Ver Resposta</summary>
+<p><strong>Resposta: Letra A.</strong></p>
+<p>O Pré-Modernismo é uma fase híbrida: dialoga com o passado, mas já antecipando características modernas, como crítica social e linguagem coloquial.</p>
+</details>
+          </div>
+      </section> 
+      <button onclick="voltarAoTopo()" id="btnTopo" title="Voltar ao topo">↑</button>
+      <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <p>Projeto Integrador de Língua Portuguesa SESI-SENAI © 2025</p>
+       <p> 3° Ano do Ensino Médio - Turma B |Gustavo Rocha Pereira </p>
+    </footer>
+
+    <script>
+        function toggleInfo(id) {
+            const el = document.getElementById(id);
+            if (el.style.display === "block") {
+                el.style.display = "none";
+            } else {
+                el.style.display = "block";
+                el.scrollIntoView({ behavior: "smooth", block: "center" });
+            }
+        }
+
+        window.onscroll = function () {
+    mostrarBotao();
+  };
+
+  function mostrarBotao() {
+    const botao = document.getElementById("btnTopo");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      botao.style.display = "block";
+    } else {
+      botao.style.display = "none";
+    }
+  }
+
+  function voltarAoTopo() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+        
+    </script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>

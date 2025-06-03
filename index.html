@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO INTEGRADOR</title>
+    <link rel="icon" href="estudo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="logo">
+      <img src="logo.png" alt="Logo sesi/senai">
+    </div>
+    <h1>PROJETO INTEGRADOR</h1>
+    <p>Escolha uma matéria para acessar o conteúdo:</p>
+
+    <div class="subjects">
+        <a href="biologia/biologia.html" class="card biologia">Biologia</a>
+        <a href="quimica/quimica.html" class="card quimica">Química</a>
+        <a href="fisica/fisica.html" class="card fisica">Física</a>
+        <a href="matematica/matematica.html" class="card matematica">Matemática</a>
+        <a href="historia/historia.html" class="card historia">História</a>
+        <a href="geografia/geografia.html" class="card geografia">Geografia</a>
+        <a href="portugues/portugues.html" class="card portugues">Português</a>
+        <a href="ingles/ingles.html" class="card ingles">Inglês</a>
+    </div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+      
+</body>
+</html>
+

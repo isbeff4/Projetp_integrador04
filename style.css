@@ -1,0 +1,96 @@
+.subjects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+a {
+    display: block;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    padding: 30px; 
+    border-radius: 12px; 
+    transition: background-color 0.3s, transform 0.3s ease; 
+}
+
+
+a:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 40px;
+}
+
+.logo img {
+    max-width: 250px; 
+    height: auto; 
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 12px; 
+    height: 200px; 
+}
+
+.biologia {
+    background-image: linear-gradient(rgba(129, 72, 29, 0.252), rgba(185, 91, 37, 0.321)),
+    url('https://pinzon.com.br/wp-content/uploads/2020/08/moluscos.png');
+}
+
+.quimica {
+    background-image: linear-gradient(rgba(29, 97, 129, 0.447), rgba(37, 138, 185, 0.252)),
+    url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
+}
+
+.fisica {
+    background-image: linear-gradient(rgba(29, 97, 129, 0.232), rgba(37, 138, 185, 0.112)),
+    url('https://s1.static.brasilescola.uol.com.br/be/2020/10/foguete.jpg');
+}
+
+.matematica {
+    background-image: linear-gradient(rgba(116, 29, 129, 0.447), rgba(138, 37, 185, 0.252)),
+    url('https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia26732/qual-e-a-finalidade-da-estatistica-voce-sabe-dicas-cursos-cpt.jpg');
+}
+
+.historia {
+    background-image: linear-gradient(rgba(122, 13, 37, 0.252), rgba(95, 13, 31, 0.252)),
+    url('https://assets.jus.com.br/system/file/1550/b30d362776f940044b160b795034ce2c.jpg');
+}
+
+.geografia {
+    background-image: linear-gradient(rgba(29, 97, 129, 0.199), rgba(37, 138, 185, 0.119)),
+    url('https://static.mundoeducacao.uol.com.br/mundoeducacao/2024/11/mao-tocando-um-globo-terrestre-em-texto-sobre-geografia.jpg');
+}
+
+.portugues {
+    background-image: linear-gradient(rgba(29, 97, 129, 0.301), rgba(37, 138, 185, 0.192)),
+    url('https://media.assettype.com/dn%2Fimport%2Fdncxpgxxypnfpero%2Fr4szrpcwm5jn.jpg?w=480&auto=format%2Ccompress&fit=max');
+}
+
+.ingles {
+    background-image: 
+    url('https://images.pexels.com/photos/973049/pexels-photo-973049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
